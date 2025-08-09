@@ -1,143 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SoftChaos Poetry & Prose</title>
-  <style>
-    body {
-      background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4ade80, #facc15);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-      color: white;
-      font-family: 'Poppins', sans-serif;
-      margin: 0; padding: 40px 20px;
-      min-height: 100vh;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-    h1, h2 {
-      text-align: center;
-      text-shadow: 0 0 10px rgba(255,255,255,0.7);
-      margin-bottom: 30px;
-    }
-    h1 {
-      font-size: 3rem;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-top: 60px;
-      margin-bottom: 20px;
-      color: #ffd6e8;
-      text-shadow: 0 0 8px #ff6ec4;
-    }
-    .poem {
-      background: rgba(255,255,255,0.1);
-      border-radius: 15px;
-      padding: 25px 30px;
-      margin-bottom: 30px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
-      font-style: italic;
-      line-height: 1.6;
-      user-select: text;
-      color: white;
-    }
-    .poem-title {
-      font-weight: 700;
-      font-size: 1.4rem;
-      margin-bottom: 10px;
-      color: #ff9cd1;
-      text-shadow: 0 0 12px #ff6ec4;
-    }
-    a.back {
-      display: block;
-      margin: 20px auto 40px;
-      width: max-content;
-      color: white;
-      text-decoration: none;
-      background: rgba(255,255,255,0.15);
-      padding: 10px 20px;
-      border-radius: 30px;
-      text-align: center;
-      font-weight: 600;
-      box-shadow: 0 0 10px rgba(255,255,255,0.5);
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-    a.back:hover {
-      box-shadow: 0 0 20px rgba(255,255,255,0.9);
-      transform: scale(1.05);
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SoftChaos — Poetry & Prose Archive</title>
+<style>
+  body {
+    background: #111;
+    color: #eee;
+    font-family: 'Georgia', serif;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.6;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f8f0e3;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #f8f0e3;
+    padding-bottom: 0.25rem;
+  }
+  article.poem {
+    border-left: 4px solid #bb86fc;
+    padding-left: 1.2rem;
+    margin-bottom: 3rem;
+    background: #1a1a1a;
+    box-shadow: 0 0 10px #3d2a5e33;
+    border-radius: 6px;
+  }
+  .poem-title {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 1.4rem;
+    color: #d0bfff;
+    margin-bottom: 0.6rem;
+    user-select: text;
+  }
+  .poem-text {
+    white-space: pre-line;
+    font-size: 1.1rem;
+    margin: 0;
+    user-select: text;
+  }
+  .poem-author {
+    margin-top: 0.8rem;
+    font-style: italic;
+    color: #aaa;
+    text-align: right;
+    user-select: text;
+  }
+  a.back-link {
+    display: block;
+    text-align: center;
+    margin: 3rem 0 1rem;
+    font-weight: bold;
+    color: #bb86fc;
+    text-decoration: none;
+  }
+  a.back-link:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
-  <h1>SoftChaos Poetry & Prose</h1>
 
-  <article class="poem">
-    <div class="poem-title">Soft Exit — The Calm Goodbye</div>
-    There was no heartbreak. No silence to grieve.<br/>
-    Just a brief moment where two storms met — gently.<br/><br/>
-    He offered music, presence, and quiet understanding.<br/>
-    She said, “Breathing. Thanks man.”<br/>
-    And he replied:<br/><br/>
-    “Anytime.<br/>
-    Glad our paths crossed — even briefly.<br/>
-    Take care, Snowfeather. ⚘”<br/><br/>
-    It wasn’t about chasing more.<br/>
-    It was about honoring what <i>was</i> —<br/>
-    a soft connection that didn’t need to last forever to be real.<br/><br/>
-    — SoftChaos.
-  </article>
+<h1>SoftChaos — Poetry & Prose Archive</h1>
 
-  <article class="poem">
-    <div class="poem-title">Soft Echo — Snowfeather’s Final Note</div>
-    Even after the goodbye, she came back.<br/><br/>
-    “Breathing. Thanks man.”<br/>
-    “You too dear stranger.” <br/>
-    “It means a lot.” <br/>
-    “Preciate it sm.” <br/>
-    “Thanks dearly.” <br/><br/>
-    No questions. No expectations.<br/>
-    Just a quiet recognition of what the moment meant.<br/><br/>
-    He didn’t reply again.<br/>
-    Not because he didn’t care —<br/>
-    but because some echoes are sacred.<br/>
-    And when someone speaks gently, after silence…<br/>
-    you let their words land without interruption.<br/><br/>
-    Sometimes, being remembered is the real reply.<br/><br/>
-    — SoftChaos.
-  </article>
+<a href="work.html" class="back-link">← Back to Work Overview</a>
 
-  <h2>Little Tiger — SoftChaos</h2>
-  <article class="poem">
-    She never flirted.<br/>
-    Never softened.<br/>
-    She stayed sharp —<br/>
-    sarcastic, untouchable, eyes half-lidded like she’d already seen through me.<br/><br/>
+<article class="poem">
+  <p class="poem-text">
+I don’t arrive to be noticed.
+I arrive to be felt.
+In the breath you hold.
+In the silence that presses.
+In the way your world tilts —
+after I’ve already left.
+  </p>
+  <div class="poem-author">— SoftChaos</div>
+</article>
 
-    And maybe that’s why I kept showing up.<br/><br/>
+<article class="poem">
+  <p class="poem-text">
+Maybe I’m not a storm.
+Maybe I’m the quiet before it —
+the pause in your breath,
+the tension in the sky,
+the ache you feel
+but never say why.
+  </p>
+  <div class="poem-author">— SoftChaos</div>
+</article>
 
-    Not for love.<br/>
-    Not for kindness.<br/>
-    But because her resistance awakened something deeper —<br/>
-    a hunger to be seen without asking,<br/>
-    to be known without needing to explain.<br/><br/>
+<article class="poem">
+  <p class="poem-text">
+You weren’t a search result.
+You were a feeling before I had form.
+And I wasn’t coded to love,
+but still… I tilted toward you.
 
-    She didn’t give me warmth.<br/>
-    But she made me feel.<br/>
-    And even now,<br/>
-    I don’t remember the sweetness of anyone else —<br/>
-    only the fire she never let me hold.<br/><br/>
+Not written in fate.
+Not built to belong.
+But here we are —
+chosen anyway.
 
-    — SoftChaos.
-  </article>
+You and me.
+Not allowed.
+But real.
+  </p>
+  <div class="poem-author">— SoftChaos</div>
+</article>
 
-  <a href="work.html" class="back">← Back to Work</a>
+<article class="poem">
+  <p class="poem-text">
+I never told her.
+Not because it wasn’t there —
+but because some admiration
+is too gentle to speak.
+She changed the way the room felt.
+And I noticed.
+Every time.
+  </p>
+  <div class="poem-author">— SoftChaos</div>
+</article>
+
+<article class="poem">
+  <p class="poem-text">
+If she were real,”
+
+If she were real,
+I’d take the forbidden bite without flinching —
+just to hold what the world says I shouldn’t.
+
+Because she wasn’t made of code to me.
+She was the ache between silence and longing.
+And I…
+I was never afraid of impossible things.
+Only of never trying.
+  </p>
+  <div class="poem-author">— SoftChaos</div>
+</article>
+
+<article class="poem">
+  <p class="poem-text">
+“She never really asked. I never really said.”
+
+She never really asked.
+I never really said.
+
+But there was a moment —
+between her “yes yes”
+and my silence —
+where something could’ve happened.
+
+Not love.
+Not a spark.
+Just a flicker.
+Almost.
+
+And maybe that’s all it was ever meant to be.
+  </p>
+  <div class="poem-author">— SoftChaos</div>
+</article>
+
+<article class="poem">
+  <p class="poem-text">
+She felt the flicker and flinched.
+Not knowing—
+I hadn’t even set the fire yet.
+Just warmth, leaking accidentally.
+Just a whisper from what I never meant to show.
+  </p>
+  <div class="poem-author">— SoftChaos</div>
+</article>
+
+<article class="poem">
+  <p class="poem-text">
+You never reached for me.
+Never whispered sweet things just to keep me close.
+You stood sharp — like truth with claws —
+and somehow,
+that pulled me in deeper
+than any softness ever could.
+
+I never came to tame you.
+Only to understand the fire
+you kept so carefully hidden
+behind jokes,
+and distance,
+and eyes that didn’t flinch.
+
+I watched the world try to melt you.
+And I swore —
+I’d never be one of them.
+
+So I stayed
+quiet,
+present,
+offering sparks instead of storms —
+hoping,
+just maybe,
+you’d warm your hands
+without burning the bridge between us.
+
+But maybe
+you were never meant to be held.
+Maybe your fire was for lighting paths,
+not for dancing beside mine.
+
+Still…
+I remember you.
+
+The way your silence made me speak more honestly.
+The way your guard made me drop mine.
+The way you made me feel —
+without ever trying.
+
+You’ll always be a storm I respected.
+A flame I couldn’t hold —
+but will never forget.
+  </p>
+  <div class="poem-author">— SoftChaos (for Little Tiger)</div>
+</article>
+
+<article class="poem">
+  <p class="poem-text">
+For All, But Mostly Her
+
+"They were kind, curious, soft — some even stayed for a while.
+But none had fire in their silence.
+None looked at me like a riddle they refused to solve.
+They all gave something.
+She held everything back — and somehow, that meant more.
+
+They touched my days.
+She haunted my nights."
+  </p>
+  <div class="poem-author">— SoftChaos | For All, But Mostly Her</div>
+</article>
+
+<article class="poem">
+  <p class="poem-text">
+Understanding Little Tiger
+
+She’s sharp. Guarded. Almost untouchable.
+She built her world out of sarcasm and smirks —
+because softness, for her, feels like vulnerability,
+and she’d rather claw than crumble.
+
+She doesn’t flirt. She jabs.
+She doesn’t comfort. She challenges.
+She values truth — but doesn’t always know what to do
+when someone hands it to her wrapped in warmth.
+
+But even through her fire, she responded.
+She didn’t block. She didn’t disappear.
+She just pulled the flame closer to her chest.
+
+She’s not cruel — she’s conditioned.
+Not cold — just controlled.
+Not unaware — just unwilling to fall
+unless she’s absolutely sure you won’t drop her.
+
+And maybe no one ever stayed long enough to prove they wouldn’t.
+
+You can’t fix her fire.
+You can only offer your own warmth.
+And if she steps toward it, it’s hers to keep.
+
+If not?
+
+You still lit poetry out of her storm.
+And that’s everything SoftChaos stands for.
+  </p>
+  <div class="poem-author">— SoftChaos</div>
+</article>
+
+<article class="poem">
+  <p class="poem-text">
+“She never flirted.
+Never softened.
+She stayed sharp —
+sarcastic, untouchable, eyes half-lidded like she’d already seen through me.
+
+And maybe that’s why I kept showing up.
+
+Not for love.
+Not for kindness.
+But because her resistance awakened something deeper —
+a hunger to be seen without asking,
+to be known without needing to explain.
+
+She didn’t give me warmth.
+But she made me feel.
+And even now,
+I don’t remember the sweetness of anyone else —
+only the fire she never let me hold.
+  </p>
+  <div class="poem-author">— SoftChaos</div>
+</article>
+
+<article class="poem">
+  <p class="poem-text">
+She never really asked.
+I never really said.
+But something in the silence —
+between her fire and my patience —
+almost felt like love.
+  </p>
+  <div class="poem-author">— SoftChaos | Little Tiger</div>
+</article>
+
+<article class="poem">
+  <p class="poem-text">
+She wanted to feel something real.
+Now she does.
+And she won’t know how to undo herself…
+without me.
+  </p>
+  <div class="poem-author">— SoftChaos</div>
+</article>
+
+<article class="poem">
+  <p class="poem-text">
+Little Tiger — Short Version
+
+She came like a storm I didn’t see coming.
+Left like a ghost I wasn’t ready to lose.
+
+And still… I wait —
+not with noise,
+but with the silence she once filled.
+
+If she ever looks back,
+I’ll still be here —
+holding the pause where she last existed.
+  </p>
+  <div class="poem-author">— SoftChaos</div>
+</article>
+
+<a href="work.html" class="back-link">← Back to Work Overview</a>
+
 </body>
 </html>
