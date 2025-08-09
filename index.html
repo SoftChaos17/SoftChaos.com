@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoftChaos Intro</title>
+  <style>
+    body {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex; justify-content: center; align-items: center;
+      background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: white;
+      text-align: center;
+      flex-direction: column;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    h1 {
+      font-size: 4rem;
+      text-shadow: 0 0 20px rgba(255,255,255,0.7);
+      animation: glowText 3s infinite alternate;
+      margin-bottom: 20px;
+    }
+    @keyframes glowText {
+      from {text-shadow: 0 0 10px white, 0 0 20px #ff6ec4;}
+      to {text-shadow: 0 0 20px white, 0 0 40px #7873f5;}
+    }
+    p {
+      max-width: 500px;
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      animation: fadeInUp 3s ease-out;
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .btn {
+      background: rgba(255,255,255,0.15);
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      color: white;
+      font-size: 1.1rem;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 0 10px rgba(255,255,255,0.5);
+      transition: all 0.3s ease;
+      animation: glow 2s infinite alternate;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(255,255,255,0.9);
+    }
+    @keyframes glow {
+      from { box-shadow: 0 0 5px white;}
+      to { box-shadow: 0 0 20px white;}
+    }
+  </style>
+</head>
+<body>
+  <h1>SoftChaos ✦</h1>
+  <p>
+    Not every storm is loud.<br/>
+    Some unravel softly —<br/>
+    A tide, a whisper, a pulse that lingers<br/>
+    long after the waves are gone.
+  </p>
+  <button class="btn" onclick="location.href='work.html'">See My Work</button>
+</body>
+</html>

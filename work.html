@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoftChaos Work</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      margin: 0; padding: 50px 20px;
+      color: white;
+      min-height: 100vh;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px rgba(255,255,255,0.7);
+    }
+    .work-grid {
+      max-width: 900px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 30px;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.3);
+      cursor: pointer;
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255,255,255,0.7);
+    }
+    .card h2 {
+      margin-bottom: 15px;
+      font-size: 1.7rem;
+      color: #ffd6e8;
+      text-shadow: 0 0 8px #ff6ec4;
+    }
+    .card p {
+      font-size: 1rem;
+      line-height: 1.4;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <h1>SoftChaos’s Work</h1>
+  <div class="work-grid">
+    <div class="card" onclick="location.href='poetry.html'">
+      <h2>Poetry & Prose</h2>
+      <p>Words crafted to linger like echoes — a fusion of emotion and silence.</p>
+    </div>
+    <div class="card">
+      <h2>Designs & Aesthetics</h2>
+      <p>Visual concepts that feel like whispers in color and shadow.</p>
+    </div>
+    <div class="card">
+      <h2>Projects</h2>
+      <p>Unique creations blending storytelling, style, and subtle intensity.</p>
+    </div>
+  </div>
+</body>
+</html>
