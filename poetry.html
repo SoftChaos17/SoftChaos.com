@@ -20,6 +20,21 @@
     -ms-user-select: none;
     user-select: none;
   }
+
+  /* Watermark overlay */
+  body::after {
+    content: "© 2025 SoftChaos";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.05);
+    transform: translate(-50%, -50%) rotate(-30deg);
+    pointer-events: none;
+    user-select: none;
+    z-index: 1000;
+  }
+
   h1 {
     text-align: center;
     font-size: 2.5rem;
@@ -28,6 +43,7 @@
     border-bottom: 2px solid #f8f0e3;
     padding-bottom: 0.25rem;
   }
+
   a.back-link {
     display: block;
     text-align: center;
@@ -36,14 +52,17 @@
     color: #bb86fc;
     text-decoration: none;
   }
+
   a.back-link:hover {
     text-decoration: underline;
   }
+
   main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
+
   article.poem {
     border-left: 4px solid #bb86fc;
     padding-left: 1.2rem;
@@ -55,12 +74,14 @@
     font-size: 1.1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-left 0.3s ease, background 0.3s ease;
   }
+
   article.poem:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px #bb86fc55;
     border-left: 4px solid #ff79c6;
     background: linear-gradient(145deg, #1a1a1a, #2b1a3b);
   }
+
   .poem-title {
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     font-size: 1.4rem;
@@ -68,21 +89,25 @@
     margin-bottom: 0.6rem;
     transition: color 0.3s ease;
   }
+
   .poem-title:hover {
     color: #ff79c6;
   }
+
   .poem-author {
     margin-top: 0.8rem;
     font-style: italic;
     color: #aaa;
     text-align: right;
   }
+
   footer {
     text-align: center;
     padding: 20px;
     font-size: 14px;
     color: #888;
   }
+
   @media (max-width: 500px) {
     body {
       padding: 0 0.5rem;
@@ -96,6 +121,7 @@
     }
   }
 </style>
+
 <script>
   // Disable right-click context menu
   document.addEventListener('contextmenu', function(e) {
@@ -121,8 +147,8 @@
   });
 </script>
 </head>
-<body>
 
+<body>
 <h1>SoftChaos — Poetry & Prose Archive</h1>
 <a href="work.html" class="back-link">← Back to Work Overview</a>
 
