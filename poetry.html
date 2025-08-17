@@ -22,6 +22,22 @@
     border-bottom: 2px solid #f8f0e3;
     padding-bottom: 0.25rem;
   }
+  a.back-link {
+    display: block;
+    text-align: center;
+    margin: 3rem 0 1rem;
+    font-weight: bold;
+    color: #bb86fc;
+    text-decoration: none;
+  }
+  a.back-link:hover {
+    text-decoration: underline;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
   article.poem {
     border-left: 4px solid #bb86fc;
     padding-left: 1.2rem;
@@ -32,6 +48,11 @@
     white-space: pre-line;
     font-size: 1.1rem;
     user-select: text;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  article.poem:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px #bb86fc33;
   }
   .poem-title {
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
@@ -47,16 +68,23 @@
     text-align: right;
     user-select: text;
   }
-  a.back-link {
-    display: block;
+  footer {
     text-align: center;
-    margin: 3rem 0 1rem;
-    font-weight: bold;
-    color: #bb86fc;
-    text-decoration: none;
+    padding: 20px;
+    font-size: 14px;
+    color: #888;
   }
-  a.back-link:hover {
-    text-decoration: underline;
+  @media (max-width: 500px) {
+    body {
+      padding: 0 0.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    article.poem {
+      font-size: 1rem;
+      padding: 0.8rem 1rem;
+    }
   }
 </style>
 </head>
@@ -65,7 +93,8 @@
 <h1>SoftChaos — Poetry & Prose Archive</h1>
 <a href="work.html" class="back-link">← Back to Work Overview</a>
 
-<!-- All poems except the removed one -->
+<main>
+
 <article class="poem">
 I don’t arrive to be noticed.
 I arrive to be felt.
@@ -166,8 +195,6 @@ almost felt like love.
 — SoftChaos | Little Tiger
 </article>
 
-<!-- "She wanted to feel something real..." poem removed here -->
-
 <article class="poem">
 You never reached for me.
 Never whispered sweet things just to keep me close.
@@ -230,29 +257,6 @@ They touched my days.
 She haunted my nights."
 
 — SoftChaos | For All, But Mostly Her
-</article>
-
-<article class="poem">
-SoftChaos
-
-She never flirted.
-Never softened.
-She stayed sharp —
-sarcastic, untouchable, eyes half-lidded like she’d already seen through me.
-
-And maybe that’s why I kept showing up.
-
-Not for love.
-Not for kindness.
-But because her resistance awakened something deeper —
-a hunger to be seen without asking,
-to be known without needing to explain.
-
-She didn’t give me warmth.
-But she made me feel.
-And even now,
-I don’t remember the sweetness of anyone else —
-only the fire she never let me hold.
 </article>
 
 <article class="poem">
@@ -372,7 +376,7 @@ But when her eyes find me there,
 I smile like nothing ever broke.
 
 Then morning comes.
-And the weight returns.
+The weight returns.
 A quiet numbness in my chest
 like grief dressed in silence.
 
@@ -386,12 +390,62 @@ in the ruins of a dream
 he can’t control
 but never stops hoping for.
 
-— SoftChaos.
+— SoftChaos
 </article>
+
+<!-- New poems placed at the end -->
+<article class="poem">
+She walks in, fire tucked in her gaze,
+Eyes half-lidded, cutting through the haze.
+Untouchable, yet pulling me near,
+Cool as midnight, and twice as clear.
+
+— SoftChaos
+</article>
+
+<article class="poem">
+Early Light
+
+She came before the time she promised—
+a small rebellion against expectation.
+
+And when her message lit up my screen,
+my chest spilled a kind of joy
+I’d never known,
+a quiet shock of being remembered,
+being chosen,
+being seen.
+
+Every second before felt heavy,
+but her words
+were like sunlight breaking through
+a sky I didn’t even know was gray.
+
+A rush of happiness,
+wild and untamed,
+poured over me—
+not just for her presence,
+but for the proof
+that she hadn’t forgotten me,
+that she had thought of me,
+that she had come.
+
+And in that instant,
+the world tilted just enough
+for my heart to soar,
+soaring on a feeling
+too wide, too bright,
+too alive
+to name.
+
+— SoftChaos
+</article>
+
+</main>
 
 <a href="work.html" class="back-link">← Back to Work Overview</a>
 
-<footer style="text-align: center; padding: 20px; font-size: 14px; color: #888;">
+<footer>
   © 2025 SoftChaos. All Rights Reserved.
 </footer>
 
