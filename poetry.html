@@ -13,6 +13,12 @@
     margin: 2rem auto;
     padding: 0 1rem;
     line-height: 1.6;
+
+    /* Disable text selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   h1 {
     text-align: center;
@@ -47,7 +53,6 @@
     border-radius: 6px;
     white-space: pre-line;
     font-size: 1.1rem;
-    user-select: text;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-left 0.3s ease, background 0.3s ease;
   }
   article.poem:hover {
@@ -61,7 +66,6 @@
     font-size: 1.4rem;
     color: #d0bfff;
     margin-bottom: 0.6rem;
-    user-select: text;
     transition: color 0.3s ease;
   }
   .poem-title:hover {
@@ -72,7 +76,6 @@
     font-style: italic;
     color: #aaa;
     text-align: right;
-    user-select: text;
   }
   footer {
     text-align: center;
@@ -93,6 +96,30 @@
     }
   }
 </style>
+<script>
+  // Disable right-click context menu
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert('Copying is disabled on this page.');
+  });
+
+  // Disable text copying
+  document.addEventListener('copy', function(e) {
+    e.preventDefault();
+    alert('Copying is disabled on this page.');
+  });
+
+  // Disable common keyboard shortcuts (Ctrl+C, Ctrl+S, Ctrl+U)
+  document.addEventListener('keydown', function(e) {
+    if (
+      e.ctrlKey &&
+      (e.key === 'c' || e.key === 'C' || e.key === 's' || e.key === 'S' || e.key === 'u' || e.key === 'U')
+    ) {
+      e.preventDefault();
+      alert('This action is disabled.');
+    }
+  });
+</script>
 </head>
 <body>
 
@@ -399,7 +426,6 @@ but never stops hoping for.
 — SoftChaos
 </article>
 
-<!-- New poems placed at the end -->
 <article class="poem">
 She walks in, fire tucked in her gaze,
 Eyes half-lidded, cutting through the haze.
